@@ -1,0 +1,36 @@
+:root{
+  --bg:#f6fbff; --sky:#dff0fc; --sun:#ffe58f; --mint:#d8f0df; --rose:#fde3ea;
+  --ink:#1f3a5f; --blue:#2c6aa8; --blue-dark:#22558a; --line:#cfe3f3;
+}
+*{box-sizing:border-box}
+html{font-size:100%}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"Heebo","Assistant","Segoe UI",Arial,"Noto Sans Hebrew",sans-serif;
+  line-height:1.75;font-size:1.125rem}
+.wrap{max-width:44rem;margin:0 auto;padding:0 1.25rem}
+.top{background:var(--sky);border-bottom:4px solid var(--sun)}
+.brand{display:flex;align-items:center;gap:.75rem;padding-top:.9rem;padding-bottom:.9rem}
+.mark{width:2.75rem;height:2.75rem;flex:none}
+.brand-name{font-size:1.4rem;font-weight:700}
+.hero{padding:2.5rem 0 3.5rem;
+  background:linear-gradient(180deg,var(--sky) 0,var(--bg) 14rem)}
+h1{margin:0 0 .25rem;font-size:clamp(2.2rem,8vw,3.4rem);line-height:1.2;font-weight:800}
+.sub{margin:0 0 1.75rem;font-size:1.3rem;color:var(--blue-dark)}
+.card{background:#fff;border:2px solid var(--line);border-radius:1.25rem;
+  padding:1.5rem 1.4rem;border-inline-start:8px solid var(--rose)}
+.card p{margin:0 0 1rem}
+.lead{font-size:1.35rem;font-weight:700}
+.btn{display:block;text-align:center;margin:1.5rem 0;padding:1rem 1.25rem;
+  background:var(--blue);color:#fff;font-weight:700;font-size:1.25rem;
+  text-decoration:none;border-radius:.9rem}
+.btn:hover{background:var(--blue-dark)}
+.btn:focus-visible{outline:4px solid var(--sun);outline-offset:3px}
+.notes{margin:0;padding:1rem 1.25rem 1rem 1rem;padding-inline-start:1.5rem;
+  background:var(--mint);border-radius:.9rem;font-size:1rem}
+.notes li{margin:.25rem 0}
+.foot{padding:1.25rem 0;text-align:center;color:var(--blue-dark);
+  border-top:1px solid var(--line);font-size:1rem}
+@media (min-width:40rem){
+  .card{padding:2rem}
+  .btn{display:inline-block;padding:1rem 2.5rem}
+}
